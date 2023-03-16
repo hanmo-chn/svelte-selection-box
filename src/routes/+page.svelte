@@ -11,13 +11,17 @@
         {code: "11114", name: "Ben"},
         {code: "11115", name: "Ada"},
         {code: "11116", name: "Toby"}
-    ]
+    ];
+
+    let disable: boolean = true;
+
+    setInterval(()=>{disable = !disable}, 5000)
 
 </script>
 
 <div style="">
-    <div style="width: 400px; height: 120px; border: 1px solid #e1e1e1;">
-        <SelectionBox {list} singleSelect={false} itemRender={StaffRender}>
+    <div style="width: 400px; height: 600px; border: 1px solid #e1e1e1;">
+        <SelectionBox {list} disable={disable} itemHeight="80" singleSelect={false} itemRender={StaffRender}>
 
         </SelectionBox>
     </div>
