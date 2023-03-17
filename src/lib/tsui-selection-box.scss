@@ -4,6 +4,38 @@
   overflow: auto;
   position: relative;
 
+  .selection-box-header {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    .filter-text {
+      flex-grow: 1;
+      flex-shrink: 1;
+      width: 100%;
+      box-sizing: border-box;
+      position: relative;
+
+      input {
+        width: 100%;
+        height: 32px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #9d9d9d;
+        padding-left: 32px;
+        position: relative;
+        box-sizing: border-box;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiIGlkPSJHbHlwaCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNy40MTQsMjQuNTg2bC01LjA3Ny01LjA3N0MyMy4zODYsMTcuOTI4LDI0LDE2LjAzNSwyNCwxNGMwLTUuNTE0LTQuNDg2LTEwLTEwLTEwUzQsOC40ODYsNCwxNCAgczQuNDg2LDEwLDEwLDEwYzIuMDM1LDAsMy45MjgtMC42MTQsNS41MDktMS42NjNsNS4wNzcsNS4wNzdjMC43OCwwLjc4MSwyLjA0OCwwLjc4MSwyLjgyOCwwICBDMjguMTk1LDI2LjYzMywyOC4xOTUsMjUuMzY3LDI3LjQxNCwyNC41ODZ6IE03LDE0YzAtMy44NiwzLjE0LTcsNy03czcsMy4xNCw3LDdzLTMuMTQsNy03LDdTNywxNy44Niw3LDE0eiIgaWQ9IlhNTElEXzIyM18iLz48L3N2Zz4=');
+        background-repeat: no-repeat;
+        background-size: 24px;
+        background-position-y: center;
+        background-position-x: 4px;
+      }
+    }
+  }
+
   .box-item {
     padding: 4px 0;
     width: 100%;

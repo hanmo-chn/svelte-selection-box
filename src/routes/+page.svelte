@@ -5,23 +5,23 @@
     import "../lib/tsui-selection-box.scss"
 
     let list = [
-        {code: "11111", name: "James"},
-        {code: "11112", name: "Jason"},
-        {code: "11113", name: "Peter"},
-        {code: "11114", name: "Ben"},
-        {code: "11115", name: "Ada"},
-        {code: "11116", name: "Toby"}
+        {code: "10114568", name: "张三"},
+        {code: "12114568", name: "张三峰"},
+        {code: "13114568", name: "张四峰"},
+        {code: "14114568", name: "张无峰"},
+        {code: "15114568", name: "张六峰"},
+        {code: "16114568", name: "张琪峰"}
     ];
 
-    let disable: boolean = true;
+    let disable: boolean = false;
 
-    setInterval(()=>{disable = !disable}, 5000)
+    let filter = (user, text) => user.name.includes(text);
 
 </script>
 
 <div style="">
-    <div style="width: 400px; height: 600px; border: 1px solid #e1e1e1;">
-        <SelectionBox {list} disable={disable} itemHeight="80" singleSelect={false} itemRender={StaffRender}>
+    <div style="width: 400px; height: 600px; border: 1px solid #333333;">
+        <SelectionBox {list} disable={disable} {filter} itemHeight="80" singleSelect={false} itemRender={StaffRender}>
 
         </SelectionBox>
     </div>
