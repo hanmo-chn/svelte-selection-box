@@ -55,6 +55,7 @@
 
     $: if (disable) {
         filterText = '';
+        filterValue = '';
     }
 
     $: if (filter && filterText && filterText.trim().length > 0) {
@@ -70,7 +71,7 @@
     {#if filter}
         <div class="selection-box-header">
             <div class="filter-text">
-                <input bind:value={filterValue}
+                <input disabled={disable} bind:value={filterValue}
                        on:input={handleInput}
                        on:compositionstart={handleCompositionStart} on:compositionend={handleCompositionEnd}>
             </div>
